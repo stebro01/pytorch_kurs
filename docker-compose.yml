@@ -1,0 +1,9 @@
+version:                "3"
+services:
+  datascience-notebook:
+      build: .
+      volumes:
+        - ./notebook:/home/jovyan/notebook
+      ports:
+        - 8888:8888
+      container_name:   datascience-notebook-container
